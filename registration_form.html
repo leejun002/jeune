@@ -38,9 +38,6 @@ button:hover {
   padding: 25px;
 }
 
-.msg-holder {
-}
-
 p.msg {
   font-size: 15px;
   color: red;
@@ -110,7 +107,7 @@ span.psw {
 
 <body>
 <div class="modal">
-  <form action="/registration_process.php" method="post" class="modal-content" id="registration-form">
+  <form action="/registration_process.php" method="post" class="modal-content" id="registration-form" novalidate>
     <div class="closecontainer">
       <span onclick="location.href='mainpage.html'" class="close" title="Close Modal">&times;</span>
     </div>
@@ -121,8 +118,8 @@ span.psw {
         <p class="msg" id="error-msg"><i class="fa-solid fa-exclamation"></i> ID already in use.</span></p>
       </div>
       <input type="text" placeholder="Email" name="email" required>
-      <input type="password" placeholder="Password" name="psw" required>
-      <input type="password" placeholder="Confirm Password" name="conf_psw" required>
+      <input type="password" placeholder="Password" name="password" required>
+      <input type="password" placeholder="Confirm Password" name="confirm_password" required>
       <div class="msg-holder" id="error-msg-holder">
         <p class="msg" id="error-msg"><i class="fa-solid fa-exclamation"></i> Password is not the same.</span></p>
       </div>
