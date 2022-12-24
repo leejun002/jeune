@@ -108,9 +108,9 @@ span.psw {
 
 <body>
 <div class="modal">
-  <form action="register.php" method="post" class="modal-content">
+  <form action="server.php" method="post" class="modal-content">
     <div class="closecontainer">
-      <span onclick="location.href='mainpage.html'" class="close" title="Close Modal">&times;</span>
+      <span onclick="location.href='/mainpage.html'" class="close" title="Close Modal">&times;</span>
     </div>
     <div class="container">
       <label><b>Create Your ID</b></label>
@@ -119,13 +119,10 @@ span.psw {
       <input type="text" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
       <input type="password" placeholder="Password" name="password" required>
       <input type="password" placeholder="Confirm Password" name="confirm_password" required>
-      <div class="msg-holder" id="error-msg-holder">
-        <p class="msg" id="error-msg"><i class="fa-solid fa-exclamation"></i> Password is not the same.</span></p>
-      </div>
       <button type="submit">Sign up</button>
     </div>
     <div class="bottomcontainer" style="background-color:#f1f1f1">
-      <span class="membership">Already have an ID? <a href="login.php">Sign in</a></span>
+      <span class="membership">Already have an ID? <a href="login.html">Sign in</a></span>
     </div>
   </form>
 </div>
