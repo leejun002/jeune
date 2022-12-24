@@ -110,9 +110,9 @@ span.psw {
 
 <body>
 <div class="modal">
-  <form action="registration_process.php" method="post">
+  <form action="registration_process.php" method="post" class="modal-content" id="login-form">
     <div class="closecontainer">
-      <span onclick="location.href='mainpage.html'" class="close" title="Close Modal">&times;</span>
+      <span onclick="location.href='jeune.html'" class="close" title="Close Modal">&times;</span>
     </div>
     <div class="container">
       <label><b>Create Your ID</b></label>
@@ -126,7 +126,7 @@ span.psw {
       <div class="msg-holder" id="error-msg-holder">
         <p class="msg" id="error-msg"><i class="fa-solid fa-exclamation"></i> Password is not the same.</span></p>
       </div>
-      <button type="submit" id="registration-form-submit">Sign up</button>
+      <button type="submit">Sign up</button>
     </div>
     <div class="bottomcontainer" style="background-color:#f1f1f1">
       <span class="membership"><a href="#">Already have an ID</a></span>
